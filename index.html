@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alejandra Baide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .texto-oscuro {
+            color: rgb(0, 0, 85);
+        }
+
+        .texto-azul {
+            color: rgb(82, 163, 255);
+            text-decoration: underline;
+        }
+
+        .texto-gris {
+            color: dimgray;
+        }
+
+        .boton {
+            background-color: rgb(82, 163, 255);
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .icono {
+            color: rgb(82, 163, 255);
+            font-size: 45px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        .gris-oscuro {
+            color: rgb(71, 71, 71);
+        }
+
+        section {
+            margin-top: 50px;
+        }
+
+        .imagen {
+            animation-name: mover;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes mover {
+            0% {
+                transform: translateX(0px) translateY(0px);
+            }
+
+            50% {
+                transform: translateX(0px) translateY(30px);
+            }
+
+            100% {
+                transform: translateX(0px) translateY(0px);
+            }
+        }
+
+        #fondo {
+            background: url("img/fondo.jpg") top center;
+            background-size: cover;
+            position: center;
+            height: 500px
+        }
+    </style>
+</head>
+
+<body>
+    <section id="fondo">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-6">
+                    <h1 class="texto-oscuro">Transform Your <span class="texto-azul">Digital Future</span></h1>
+                    <p class="texto-gris">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium totam rem aperiam.</p>
+                    <div class="d-flex align-items-center">
+                        <div><button type="button" class="boton">START JOURNEY</button></div>
+                        <div><i class="bi bi-play-circle-fill icono"></i></div>
+                        <div><b class="gris-oscuro">Watch Demo</b></div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img src="img/gente.jpg" alt="" class="img-fluid imagen">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
